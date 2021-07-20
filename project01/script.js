@@ -1,3 +1,6 @@
+//--------------------
+// Getting DOM Elements
+//--------------------
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -64,6 +67,10 @@ function passwordMatch(pass1, pass2) {
     showError(pass2, "Passwords do not match");
   }
 }
+
+//--------------------
+// Event Listners
+//--------------------
 document.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInput([username, email, password, password2]);
