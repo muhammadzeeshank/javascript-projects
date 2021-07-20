@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
 label {
   color: #808080;
   display: none;
@@ -20,8 +28,15 @@ input:active {
   outline: none;
 }
 input:focus {
-  border: 2px solid #4688f1;
+  border: 1px solid #4688f1;
   outline: none;
+}
+.form-control.error input {
+  border: 1px solid red;
+  background-color: rgba(200, 0, 0, 0.123);
+}
+.form-control.success input {
+  background-color: rgba(0, 200, 0, 0.123);
 }
 .container > h2 {
   font-weight: 1200;
@@ -29,7 +44,7 @@ input:focus {
 .container {
   border: 0.5px solid #c8c8c8;
   width: 50%;
-  margin: auto;
+  margin: 100px auto 50px auto;
   padding: 20px;
   border-radius: 10px;
 }
@@ -56,7 +71,20 @@ input:focus {
   font-size: 10px;
   text-align: left;
   display: block;
-  display: none;
-  /* visibility: hidden; */
+  visibility: hidden;
   color: red;
+}
+.form-control.error small {
+  visibility: visible;
+}
+.home_button {
+  color: #3566b8;
+  text-decoration: none;
+}
+.home_button:hover {
+  color: #4688f1;
+  background-color: rgba(1, 1, 187, 0.116);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
 }
