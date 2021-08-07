@@ -1,0 +1,44 @@
+/*** FONTS ***/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  color: #1d1f20;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+.gradient-list a {
+  text-decoration: none;
+  color: #3566b8;
+}
+ol.gradient-list li {
+  /* box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05); */
+  /* counter-reset: gradient-counter; */
+  /* list-style: none; */
+  border-radius: 5px;
+  margin: 1.75rem 0;
+  padding: 1em 2em;
+}
+.gradient-list li:hover {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  cursor: pointer;
+  color: #4688f1;
+}
