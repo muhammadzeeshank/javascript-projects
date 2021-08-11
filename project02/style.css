@@ -19,6 +19,9 @@ body {
   margin-left: 5px;
   border-radius: 5px;
 }
+.select-container select:active {
+  border: none;
+}
 .seat {
   width: 15px;
   height: 15px;
